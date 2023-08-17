@@ -4,7 +4,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
-    "name": "massello",
+    "name": "@fatmatto/massello",
     "triples": {
       "additional": [
         "aarch64-apple-darwin",
@@ -44,5 +44,22 @@
   "packageManager": "yarn@3.6.1",
   "dependencies": {
     "apache-arrow": "^12.0.1"
-  }
+  },
+  "optionalDependencies": {
+    "@fatmatto/massello-win32-x64-msvc": "0.0.0",
+    "@fatmatto/massello-darwin-x64": "0.0.0",
+    "@fatmatto/massello-linux-x64-gnu": "0.0.0",
+    "@fatmatto/massello-darwin-arm64": "0.0.0",
+    "@fatmatto/massello-android-arm64": "0.0.0",
+    "@fatmatto/massello-linux-arm64-gnu": "0.0.0",
+    "@fatmatto/massello-linux-arm64-musl": "0.0.0",
+    "@fatmatto/massello-win32-arm64-msvc": "0.0.0",
+    "@fatmatto/massello-linux-arm-gnueabihf": "0.0.0",
+    "@fatmatto/massello-linux-x64-musl": "0.0.0",
+    "@fatmatto/massello-freebsd-x64": "0.0.0",
+    "@fatmatto/massello-win32-ia32-msvc": "0.0.0",
+    "@fatmatto/massello-android-arm-eabi": "0.0.0",
+    "@fatmatto/massello-darwin-universal": "0.0.0"
+  },
+  "repository": "https://github.com/fatmatto/massello"
 }
