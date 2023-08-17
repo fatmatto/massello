@@ -1,5 +1,5 @@
-/// This works derives from https://github.com/kylebarron/parquet-wasm
 #![deny(clippy::all)]
+/// This works derives from https://github.com/kylebarron/parquet-wasm
 
 #[macro_use]
 extern crate napi_derive;
