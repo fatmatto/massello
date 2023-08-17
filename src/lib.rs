@@ -1,3 +1,4 @@
+/// This works derives from https://github.com/kylebarron/parquet-wasm
 #![deny(clippy::all)]
 
 #[macro_use]
