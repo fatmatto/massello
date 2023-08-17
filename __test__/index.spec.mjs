@@ -1,7 +1,12 @@
 import test from 'ava'
 
-import { sum } from '../index.js'
+import { fromParquetBuffer } from '../index.js'
+import {readFileSync} from 'fs'
 
-test('sum from native', (t) => {
-  t.is(sum(1, 2), 3)
+test('Read parquet buffer', (t) => {
+  const buf = readFileSync('./__test__/data.parquet')
+
+  t.notThrows(() => {
+    const ipc = fromParquetBuffer(buf, [])
+  })
 })
